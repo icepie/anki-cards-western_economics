@@ -1,0 +1,164 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "de239045-570f-11ea-a8fb-acfdce073bea",
+    "deck_config_uuid": "d0c78ed2-5561-11ea-8053-80fa5b144275",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "d0c78ed2-5561-11ea-8053-80fa5b144275",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "arts",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 0,
+                "perDay": 100,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "教材:  高鸿业《西方经济学》\n其他: 待补充",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [
+        "_bg.png",
+        "_san.ttf",
+        "_space.png",
+        "_times.ttf",
+        "_x-day.svg",
+        "_x-night.svg",
+        "_y-day.svg",
+        "_y-night.svg",
+        "_z-day.svg",
+        "_z-night.svg"
+    ],
+    "name": "Arts::西方经济学::微观",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "d392b50f-5561-11ea-b91b-80fa5b144275",
+            "css": "<!-- https: //icepie.github.io -->\n\n/* ----------Font---------- */\n\n@font-face {\n    font-family: yh;\n    src: url('_san.ttf');\n}\n\n@font-face {\n    font-family: times;\n    src: url('_times.ttf');\n}\n\n\n/* ----------Style---------- */\n\nbody {\n    background-color: #fff;\n    color: black;\n}\n\n.card {\n    font: 20px/30px yh;\n    background-color: #fff;\n    #background-image: url(_bg.png);\n    #background-size: 100%;\n}\n\n.cloze {\n    color: #ec6c4f;\n    #font-weight: bold;\n    border-bottom: 1px solid #ec6c4f;\n    -webkit-animation: cloze 0.4s 0s;\n    -webkit-animation-fill-mode: forwards;\n}\n\n.deck {\n    font: 15px/15px yh;\n}\n\n.h1 {\n    font: 22px/22px yh;\n    padding: 0.3em 0em 0.3em 0.5em;\n}\n\n.h2 {\n    font: 20px/30px yh;\n    padding: 0.3em 0em 0.3em 0.5em;\n}\n\n.xleft {\n    border-left: 3px solid #ec6c4f;\n}\n\n.yleft {\n    border-left: 3px solid #338eca;\n}\n\n.zleft {\n    border-left: 3px solid #4c991b;\n}\n\n.xcolor {\n    color: #ec6c4f;\n}\n\n.ycolor {\n    color: #338eca;\n}\n\n.zcolor {\n    color: #4c991b;\n}\n\n.ximg {\n    background: url(_x-day.svg);\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n.yimg {\n    background: url(_y-day.svg);\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n.zimg {\n    background: url(_z-day.svg);\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n.hint {\n    color: #333;\n}\n\n\n/* ----------Table---------- */\n\ntable {\n    border-collapse: collapse\n}\n\n.table {\n    width: 100%;\n    margin-bottom: 1rem;\n    background-color: transparent\n}\n\n.table th,\n.table td {\n    padding: 0.75rem;\n    vertical-align: top;\n    border-top: 1px solid #dee2e6\n}\n\n.table thead th {\n    vertical-align: bottom;\n    border-bottom: 2px solid #dee2e6\n}\n\n.table tbody+tbody {\n    border-top: 2px solid #dee2e6\n}\n\n.table .table {\n    background-color: #fff\n}\n\n.table-sm th,\n.table-sm td {\n    padding: 0.3rem\n}\n\n.table-bordered {\n    border: 1px solid #dee2e6\n}\n\n.table-bordered th,\n.table-bordered td {\n    border: 1px solid #dee2e6\n}\n\n.table-bordered thead th,\n.table-bordered thead td {\n    border-bottom-width: 2px\n}\n\n.table-borderless th,\n.table-borderless td,\n.table-borderless thead th,\n.table-borderless tbody+tbody {\n    border: 0\n}\n\n.table-striped tbody tr:nth-of-type(odd) {\n    background-color: #ecf0f1\n}\n\n.table-hover tbody tr:hover {\n    background-color: rgba(0, 0, 0, 0.075)\n}\n\n.table-primary,\n.table-primary>th,\n.table-primary>td {\n    background-color: #c4c9ce\n}\n\n.table-hover .table-primary:hover {\n    background-color: #b6bcc2\n}\n\n.table-hover .table-primary:hover>td,\n.table-hover .table-primary:hover>th {\n    background-color: #b6bcc2\n}\n\n.table-secondary,\n.table-secondary>th,\n.table-secondary>td {\n    background-color: #e1e6e6\n}\n\n.table-hover .table-secondary:hover {\n    background-color: #d3dada\n}\n\n.table-hover .table-secondary:hover>td,\n.table-hover .table-secondary:hover>th {\n    background-color: #d3dada\n}\n\n.table-success,\n.table-success>th,\n.table-success>td {\n    background-color: #beece3\n}\n\n.table-hover .table-success:hover {\n    background-color: #aae6db\n}\n\n.table-hover .table-success:hover>td,\n.table-hover .table-success:hover>th {\n    background-color: #aae6db\n}\n\n.table-info,\n.table-info>th,\n.table-info>td {\n    background-check: #c6e2f5\n}\n\n.table-hover .table-info:hover {\n    background-color: #b0d7f1\n}\n\n.table-hover .table-info:hover>td,\n.table-hover .table-info:hover>th {\n    background-color: #b0d7f1\n}\n\n.table-warning,\n.table-warning>th,\n.table-warning>td {\n    background-color: #fce3bd\n}\n\n.table-hover .table-warning:hover {\n    background-color: #fbd9a5\n}\n\n.table-hover .table-warning:hover>td,\n.table-hover .table-warning:hover>th {\n    background-color: #fbd9a5\n}\n\n.table-danger,\n.table-danger>th,\n.table-danger>td {\n    background-color: #f8cdc8\n}\n\n.table-hover .table-danger:hover {\n    background-color: #f5b8b1\n}\n\n.table-hover .table-danger:hover>td,\n.table-hover .table-danger:hover>th {\n    background-color: #f5b8b1\n}\n\n.table-light,\n.table-light>th,\n.table-light>td {\n    background-color: #fafbfb\n}\n\n.table-hover .table-light:hover {\n    background-color: #ecf0f0\n}\n\n.table-hover .table-light:hover>td,\n.table-hover .table-light:hover>th {\n    background-color: #ecf0f0\n}\n\n.table-dark,\n.table-dark>th,\n.table-dark>td {\n    background-color: #dadedf\n}\n\n.table-hover .table-dark:hover {\n    background-color: #ccd2d3\n}\n\n.table-hover .table-dark:hover>td,\n.table-hover .table-dark:hover>th {\n    background-color: #ccd2d3\n}\n\n.table-active,\n.table-active>th,\n.table-active>td {\n    background-color: rgba(0, 0, 0, 0.075)\n}\n\n.table-hover .table-active:hover {\n    background-color: rgba(0, 0, 0, 0.075)\n}\n\n.table-hover .table-active:hover>td,\n.table-hover .table-active:hover>th {\n    background-color: rgba(0, 0, 0, 0.075)\n}\n\n.table .thead-dark th {\n    color: #fff;\n    background-color: #212529;\n    border-color: #32383e\n}\n\n.table .thead-light th {\n    color: #7b8a8b;\n    background-color: #ecf0f1;\n    border-color: #dee2e6\n}\n\n.table-dark {\n    color: #fff;\n    background-color: #212529\n}\n\n.table-dark th,\n.table-dark td,\n.table-dark thead th {\n    border-color: #32383e\n}\n\n.table-dark.table-bordered {\n    border: 0\n}\n\n.table-dark.table-striped tbody tr:nth-of-type(odd) {\n    background-color: rgba(255, 255, 255, 0.05)\n}\n\n.table-dark.table-hover tbody tr:hover {\n    background-color: rgba(255, 255, 255, 0.075)\n}\n\n@media (max-width: 575.98px) {\n    .table-responsive-sm {\n        display: block;\n        width: 100%;\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n        -ms-overflow-style: -ms-autohiding-scrollbar\n    }\n    .table-responsive-sm>.table-bordered {\n        border: 0\n    }\n}\n\n@media (max-width: 767.98px) {\n    .table-responsive-md {\n        display: block;\n        width: 100%;\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n        -ms-overflow-style: -ms-autohiding-scrollbar\n    }\n    .table-responsive-md>.table-bordered {\n        border: 0\n    }\n}\n\n@media (max-width: 991.98px) {\n    .table-responsive-lg {\n        display: block;\n        width: 100%;\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n        -ms-overflow-style: -ms-autohiding-scrollbar\n    }\n    .table-responsive-lg>.table-bordered {\n        border: 0\n    }\n}\n\n@media (max-width: 1199.98px) {\n    .table-responsive-xl {\n        display: block;\n        width: 100%;\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n        -ms-overflow-style: -ms-autohiding-scrollbar\n    }\n    .table-responsive-xl>.table-bordered {\n        border: 0\n    }\n}\n\n.table-responsive {\n    display: block;\n    width: 100%;\n    overflow-x: auto;\n    -webkit-overflow-scrolling: touch;\n    -ms-overflow-style: -ms-autohiding-scrollbar\n}\n\n.table-responsive>.table-bordered {\n    border: 0\n}\n\n\n/* ----------Others---------- */\n\na {\n    color: #666;\n}\n\nimg {\n    max-width: 100%;\n    vertical-align: middle;\n}\n\n.chrome img {\n    max-width: 100%;\n    vertical-align: middle;\n}\n\nul,\nol {\n    margin-top: 0em;\n}\n\nli {\n    margin-left: -0.5em;\n}\n\ni {\n    font-family: palatino;\n    padding: 0 3px 0 0;\n}\n\nu {\n    text-decoration: none;\n    background-color: #ffff75;\n    border-bottom: 1px solid #ec6c4f;\n}\n\nuu {\n    border-bottom: 1px solid #ec6c4f;\n}\n\nhr {\n    height: 1px;\n    width: 100%;\n    display: block;\n    border: 0px solid #fff;\n    vertical-align: middle;\n    margin: 5px 0px 10px 0px;\n    background-color: #ccc;\n}\n\n#time {\n    font-family: yh;\n    float: right;\n}\n\n\n/* ----------Night mode（Android）---------- */\n\nbody.night_mode {\n    background-color: #000000;\n    color: #ffffff;\n}\n\n.night_mode .card {\n    background-color: #000000;\n    color: #ffffff;\n}\n\n.night_mode .cloze {\n    color: red;\n    border-bottom: 1px solid red;\n}\n\n.night_mode .xleft {\n    border-left: 3px solid #ffffff;\n}\n\n.night_mode .yleft {\n    border-left: 3px solid #ffffff;\n}\n\n.night_mode .zleft {\n    border-left: 3px solid #ffffff;\n}\n\n.night_mode .xcolor {\n    #font-weight: bold;\n    color: #0099ff;\n}\n\n.night_mode .ycolor {\n    #font-weight: bold;\n    color: #d10000;\n}\n\n.night_mode .zcolor {\n    #font-weight: bold;\n    color: #00cc00;\n}\n\n.night_mode .ximg {\n    background: url(_x-night.svg);\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n.night_mode .yimg {\n    background: url(_y-night.svg);\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n.night_mode .zimg {\n    background: url(_z-night.svg);\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n.night_mode .hint {\n    color: #ffffff;\n}\n\n.night_mode u {\n    color: red;\n    background-color: #000000;\n    border-bottom: 1px solid red;\n}\n\n.night_mode uu {\n    border-bottom: 1px solid red;\n}\n\n#.night_mode img {\n    filter: alpha(opacity=30);\n    opacity: 0.3;\n}\n\n.night_mode audio {\n    filter: alpha(opacity=30);\n    opacity: 0.3;\n}\n\n.night_mode hr {\n    background-color: #ffffff;\n}\n\n.night_mode .btn {\n    opacity: 0.5;\n    right: 10px;\n    bottom: 10px;\n    position: fixed;\n}\n\n.night_mode .btn:active {\n    opacity: 0.3;\n}\n\n\n/* ----------Animation---------- */\n\n.slide {\n    position: relative;\n    -webkit-animation: slide 1s 0s;\n    -webkit-animation-fill-mode: forwards;\n}\n\n@-webkit-keyframes slide {\n    0% {\n        opacity: 0;\n        top: 100px;\n    }\n    50% {\n        opacity: 0.8;\n        top: -10px;\n    }\n    100% {\n        opacity: 1.0;\n        top: -3px;\n    }\n}\n\n@-webkit-keyframes cloze {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}",
+            "flds": [
+                {
+                    "font": "DejaVu Serif",
+                    "media": [],
+                    "name": "Q",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "方正悠黑简体",
+                    "media": [],
+                    "name": "A",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "方正悠黑简体",
+                    "media": [],
+                    "name": "N",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "宋体",
+                    "media": [],
+                    "name": "M",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "undefined-mix",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "§1.1什么是西方经济学"
+            ],
+            "tmpls": [
+                {
+                    "afmt": "<!-- https://icepie.github.io -->\n\n<div class=\"deck\">{{Deck}}</div>\n\n<div class=\"h1 xcolor xleft\">\n    <span class=\"ximg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n    {{^Tags}}Q{{/Tags}}\n    {{#Tags}}{{Tags}}{{/Tags}}\n    <span id=\"time\">\n    </span>\n</div>\n\n<div class=\"h2 xleft\" id=\"div0\" style=\"display:none; \">{{cloze:Q}}</div>\n<div class=\"h2 xleft\" id=\"div1\" style=\"display:block;\">{{Q}}</div>\n\n{{#A}}\n<div class=\"h2 xleft slide\" id='div0' style=\"display:block;\">\n    <hr>{{A}}</div>\n<div class=\"h2 xleft slide\" id='div1' style=\"display:none; \">\n    <hr>{{A}}</div>\n{{/A}}\n\n{{#N}}\n<br>\n<div class=\"slide\">\n    <div class=\"h1 ycolor yleft\">\n        <span class=\"yimg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n        N\n    </div>\n    <div class=\"h2  yleft\">{{N}}</div>\n</div>\n{{/N}}\n\n{{#M}}\n<br>\n<div class=\"slide\">\n    <div class=\"h1 zcolor zleft\">\n        <span class=\"zimg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n        M\n    </div>\n    <div class=\"h2 zleft\">{{hint:M}}</div>\n</div>\n{{/M}}\n\n<div style=\"display:none\">{{cloze:Q}}</div>\n\n\n<script type=\"text/javascript\">\n\n    function showLocale(objD) {\n        var hh = objD.getHours();\n        if (hh < 10) hh = '0' + hh;\n        var mm = objD.getMinutes();\n        if (mm < 10) mm = '0' + mm;\n        str = hh + \":\" + mm;\n        return (str);\n    }\n    function tick() {\n        var today;\n        today = new Date();\n        document.getElementById(\"time\").innerHTML = showLocale(today);\n        window.setTimeout(\"tick()\", 1000);\n    }\n    tick();\n\n    var arr = new Array, arr1 = new Array, arr2 = new Array;\n\n    /////////\n    [].forEach.call(document.querySelectorAll('#div0'),\n        function (V0) {\n            V0.innerHTML = V0.innerHTML.replace(/\\{\\{[c]\\d+\\:\\:([^\\{|\\}]+?)\\}\\}/g,\n                function (cloze) {\n                    var div30 = '<span id=\"div3\" onclick=\"toggle(this)\" class=\"cloze\" cloze=\"@CLOZE@\" cloze1=\"@CLOZE@1\" cloze2=\"@CLOZE@2\" wor=\"wor2\">@......@</span>';\n                    var dd1 = cloze.indexOf(\"::\"), dd2 = cloze.lastIndexOf(\"::\"), dd3 = cloze.length, cc = 0, cc1 = 0, cc2 = 0;\n                    var word = cloze.substring(dd1 + 2, dd3 - 2);\n                    var word1, word2;\n                    switch (dd2 - dd1) {\n                        case 0: word1 = word; word2 = \"<uu>　　</uu>\"; break;\n                        case 1: word1 = word; word2 = \"<uu>　　</uu>\"; break;\n                        case 2: word1 = word; word2 = \"<uu>　　</uu>\"; break;\n                        default:\n                            if (dd3 - dd2 == 4) { word1 = word; word2 = \"<uu>&emsp;&emsp;</uu>\"; }\n                            else { word1 = cloze.substring(dd1 + 2, dd2); word2 = \"<uu>&nbsp;&nbsp;\" + cloze.substring(dd2 + 2, dd3 - 2) + \"&nbsp;&nbsp;</uu>\"; }\n                    }\n                    cc = arr.push(word) - 1; cc1 = arr1.push(word1) - 1; cc2 = arr2.push(word2) - 1;\n                    return div30.replace('@CLOZE@', cc).replace('@CLOZE@1', cc1).replace('@CLOZE@2', cc2).replace('@......@', word2);\n                });\n        });\n    /////////\n\n    /////////\n    [].forEach.call(document.querySelectorAll('#div1'),\n        function (V2) {\n            V2.innerHTML = V2.innerHTML.replace(/(\\{\\{[c]\\d+\\:\\:[^\\{|\\}]+?)\\:\\:[^\\{|\\}]*?\\}\\}/g, \"$1}}\").replace(/\\{\\{[c]\\d+\\:\\:([^\\{|\\}]+?)\\}\\}/g, '<span class=\"cloze\">' + \"$1\" + '</span>');\n        });\n    //////////\n\n    //////////\n    function toggle(id) {\n\n        if (id.getAttribute('wor') == \"wor2\") {\n\n            id.innerHTML = arr1[id.getAttribute('cloze1')];\n            id.setAttribute('wor', \"wor1\");\n\n            return;\n        }\n        if (id.getAttribute('wor') == \"wor1\") {\n\n            id.innerHTML = arr2[id.getAttribute('cloze2')];\n            id.setAttribute('wor', \"wor2\");\n\n            return;\n        }\n    }\n\n</script>",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "mix",
+                    "ord": 0,
+                    "qfmt": " \n<!-- https://icepie.github.io -->\n\n<div class=\"deck\">{{Deck}}</div>\n\n<div class=\"h1 xcolor xleft\">\n    <span class=\"ximg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n    {{^Tags}}Q{{/Tags}}\n    {{#Tags}}{{Tags}}{{/Tags}}\n    <span id=\"time\">\n    </span>\n</div>\n\n<div class=\"h2 xleft\" id=\"div0\" style=\"display:block;\">{{Q}}</div>\n<div class=\"h2 xleft\" id=\"div1\" style=\"display:none; \">{{Q}}</div>\n\n\n<div style=\"display:none\">{{Q}}</div>\n\n\n<script type=\"text/javascript\">\n\n    function showLocale(objD) {\n        var hh = objD.getHours();\n        if (hh < 10) hh = '0' + hh;\n        var mm = objD.getMinutes();\n        if (mm < 10) mm = '0' + mm;\n        str = hh + \":\" + mm;\n        return (str);\n    }\n    function tick() {\n        var today;\n        today = new Date();\n        document.getElementById(\"time\").innerHTML = showLocale(today);\n        window.setTimeout(\"tick()\", 1000);\n    }\n    tick();\n\n    var arr = new Array, arr1 = new Array, arr2 = new Array;\n\n    /////////\n    [].forEach.call(document.querySelectorAll('#div0'),\n        function (V0) {\n            V0.innerHTML = V0.innerHTML.replace(/\\{\\{[c]\\d+\\:\\:([^\\{|\\}]+?)\\}\\}/g,\n                function (cloze) {\n                    var div30 = '<span id=\"div3\" onclick=\"toggle(this)\" class=\"cloze\" cloze=\"@CLOZE@\" cloze1=\"@CLOZE@1\" cloze2=\"@CLOZE@2\" wor=\"wor2\">@......@</span>';\n                    var dd1 = cloze.indexOf(\"::\"), dd2 = cloze.lastIndexOf(\"::\"), dd3 = cloze.length, cc = 0, cc1 = 0, cc2 = 0;\n                    var word = cloze.substring(dd1 + 2, dd3 - 2);\n                    var word1, word2;\n                    switch (dd2 - dd1) {\n                        case 0: word1 = word; word2 = \"<uu>　　</uu>\"; break;\n                        case 1: word1 = word; word2 = \"<uu>　　</uu>\"; break;\n                        case 2: word1 = word; word2 = \"<uu>　　</uu>\"; break;\n                        default:\n                            if (dd3 - dd2 == 4) { word1 = word; word2 = \"<uu>&emsp;&emsp;</uu>\"; }\n                            else { word1 = cloze.substring(dd1 + 2, dd2); word2 = \"<uu>&nbsp;&nbsp;\" + cloze.substring(dd2 + 2, dd3 - 2) + \"&nbsp;&nbsp;</uu>\"; }\n                    }\n                    cc = arr.push(word) - 1; cc1 = arr1.push(word1) - 1; cc2 = arr2.push(word2) - 1;\n                    return div30.replace('@CLOZE@', cc).replace('@CLOZE@1', cc1).replace('@CLOZE@2', cc2).replace('@......@', word2);\n                });\n        });\n    /////////\n\n    /////////\n    [].forEach.call(document.querySelectorAll('#div1'),\n        function (V2) {\n            V2.innerHTML = V2.innerHTML.replace(/(\\{\\{[c]\\d+\\:\\:[^\\{|\\}]+?)\\:\\:[^\\{|\\}]*?\\}\\}/g, \"$1}}\").replace(/\\{\\{[c]\\d+\\:\\:([^\\{|\\}]+?)\\}\\}/g, '<span class=\"cloze\">' + \"$1\" + '</span>');\n        });\n    //////////\n\n    //////////\n    function toggle(id) {\n\n        if (id.getAttribute('wor') == \"wor2\") {\n\n            id.innerHTML = arr1[id.getAttribute('cloze1')];\n            id.setAttribute('wor', \"wor1\");\n\n            return;\n        }\n        if (id.getAttribute('wor') == \"wor1\") {\n\n            id.innerHTML = arr2[id.getAttribute('cloze2')];\n            id.setAttribute('wor', \"wor2\");\n\n            return;\n        }\n    }\n\n</script>"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "西方经济学的研究对象:&nbsp;{{c1::经济资源的配置和利用}}",
+                "",
+                "原因是:&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; 人类一切经济活动都是为了满足他们的欲望以及由这些欲望引起的对各种物品和服务 的需求，人的欲望和需求是无穷无尽的，而满足这些需要的经济资源(包括它们生产的产品)在一定时期内总是有限的，这就是稀缺性。",
+                "&nbsp; &nbsp; 由于资源相对需求而言的稀缺性，便产生了如何利用稀缺资源去生产\"经济物品\" (人类必须用代价才能得到的物品)来更好满足人类 需要的所谓选择问题。\n<br>选择所要解决的问题包括 \n<br>(1) 生产什么(what) 以及多少? \n<br>(2) 如何 (how) 生产? \n<br>(3) 为谁 (for whom) 生产? \n<br>(4) 何时 (when) 生产?"
+            ],
+            "flags": 0,
+            "guid": "q2n1R{9J*2",
+            "newlyAdded": false,
+            "note_model_uuid": "d392b50f-5561-11ea-b91b-80fa5b144275",
+            "tags": [
+                "§1.1什么是西方经济学"
+            ]
+        }
+    ]
+}
